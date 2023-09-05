@@ -828,7 +828,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e24db8b495cd95d44b388018438408ba, type: 2}
+  - {fileID: 2100000, guid: b71cf34c83e57f94795f9248c3e7438c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -958,8 +958,8 @@ Transform:
   m_GameObject: {fileID: 174316130}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.644, y: -0.802, z: 13.193}
-  m_LocalScale: {x: 1, y: 0.98522, z: 1}
+  m_LocalPosition: {x: 2.644, y: -0.305, z: 13.193}
+  m_LocalScale: {x: 1, y: 0.022161538, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -978,6 +978,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tp: {fileID: 2050604634}
   player: {fileID: 2071793532}
+  teleportKey: 116
 --- !u!1 &209300498
 GameObject:
   m_ObjectHideFlags: 0
@@ -5220,7 +5221,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1770699683099905545, guid: 33a7e848ce42e7b43a917cdab018b9cc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1737430825}
   m_SourcePrefab: {fileID: 100100000, guid: 33a7e848ce42e7b43a917cdab018b9cc, type: 3}
 --- !u!1 &1106102113
 GameObject:
@@ -8089,6 +8093,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1717351416}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1737430821 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1770699683099905545, guid: 33a7e848ce42e7b43a917cdab018b9cc, type: 3}
+  m_PrefabInstance: {fileID: 1100740189}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1737430825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737430821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0531a20c575342d43a806d8fab5ab1cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1738094603
 GameObject:
   m_ObjectHideFlags: 0
@@ -10024,8 +10045,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb8cb2d93c9830f4eb2252e4df2f7721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tp: {fileID: 0}
-  player: {fileID: 0}
+  tp: {fileID: 174316134}
+  player: {fileID: 2071793532}
+  teleportKey: 101
 --- !u!65 &2050604631
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10106,7 +10128,7 @@ Transform:
   m_GameObject: {fileID: 2050604629}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.428, y: 0.103, z: 13.193}
+  m_LocalPosition: {x: 4.428, y: -0.308, z: 13.152}
   m_LocalScale: {x: 1, y: -0.0072345, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
