@@ -38,6 +38,7 @@ public class AutomaticScript : MonoBehaviour
             movingDoor2.transform.position = Vector3.MoveTowards(movingDoor2.transform.position, targetPosition2, step);
         }
     }
+    // test
 
     private void OnTriggerEnter(Collider col)
     {
