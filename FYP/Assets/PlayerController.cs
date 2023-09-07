@@ -22,5 +22,6 @@ public class PlayerController : MonoBehaviour
 
         // Move the player.
         transform.Translate(movement);
+
     }
 }
