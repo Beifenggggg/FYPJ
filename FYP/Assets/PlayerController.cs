@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
+
 {
+    
     public float moveSpeed = 5.0f; // Adjust this to control the movement speed.
 
     void Update()
