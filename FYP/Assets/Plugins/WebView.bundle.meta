@@ -38,8 +38,7 @@ PluginImporter:
         CPU: AnyCPU
     OSXUniversal:
       enabled: 1
-      settings:
-        CPU: AnyCPU
+      settings: {}
     Win:
       enabled: 0
       settings:
