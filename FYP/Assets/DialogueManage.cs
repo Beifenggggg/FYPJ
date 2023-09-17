@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Io.Pipes;
+using System.IO.Pipes;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class DialogueManager: MonoBehaviour
 {
     // Start is called before the first frame update
-  public NPC npc;
+  public NPC npc; 
 
   bool isTalking = false;
 
@@ -22,6 +22,6 @@ public class DialogueManager: MonoBehaviour
 
   void Start()
   {
-    dialogueUI.SetActive(false)
+    dialogueUI.SetActive(false);
   }                                                                                                                                                                                                                                          
 }
