@@ -14,7 +14,7 @@ public class lightingonoff : MonoBehaviour
     {
         PlayerInZone = false; // Player not in zone       
         txtToDisplay.SetActive(false);
-
+        //
         // Get the Animator component reference
         _animator = GetComponent<Animator>();
     }
