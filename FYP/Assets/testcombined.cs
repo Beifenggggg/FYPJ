@@ -5,7 +5,8 @@ public class testcombined : MonoBehaviour
     public GameObject lightSwitch; // Reference to the light switch GameObject
     public GameObject lightObject; // Reference to the light GameObject
     public Collider colliderZone; // Reference to the collider zone
-    private Animator lightSwitchAnimator; // Animator for the light switch
+    private Animator lightSwitchAnimator;
+    public GameObject txtToDisplay; // Animator for the light switch
 
     private bool isLightOn = false; // Track the state of the light
     private bool playerInZone = false; // Check if the player is in the trigger
@@ -16,6 +17,8 @@ public class testcombined : MonoBehaviour
         lightSwitchAnimator = lightSwitch.GetComponent<Animator>();
         audioSource = lightSwitch.GetComponent<AudioSource>();
         lightObject.SetActive(isLightOn); // Ensure the light is initially off
+        txtToDisplay.SetActive(false);
+
     }
 
     private void Update()
@@ -31,6 +34,7 @@ public class testcombined : MonoBehaviour
         if (other.gameObject.CompareTag("Player")) // If player enters zone
         {
             playerInZone = true;
+            txtToDisplay.SetActive(true);
         }
     }
 
@@ -39,6 +43,7 @@ public class testcombined : MonoBehaviour
         if (other.gameObject.CompareTag("Player")) // If player exits zone
         {
             playerInZone = false;
+            txtToDisplay.SetActive(false);
         }
     }
 
